@@ -1,0 +1,2183 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)edge://policy/ -->
+<html dir="ltr" lang="es"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"><title>Directivas</title><script src="edge://policy/base-error-reporting.js"></script><script src="edge://policy/policy-error-reporting.js"></script><script src="edge://resources/js/load_time_data.m.js" type="module"></script><script src="edge://policy/strings.m.js" type="module"></script><style>/* Copyright (C) Microsoft Corporation. All rights reserved.
+ * Use of this source code is governed by a BSD-style license that can be
+ * found in the LICENSE file. */
+
+body {
+  font-family: "system-ui", sans-serif;
+  font-size: 14px;
+  background-color: rgb(247, 247, 247);
+  margin: 0;
+}
+
+@media (forced-colors: active) {
+  ::placeholder {
+    color: ButtonText !important;
+  }
+}
+
+@media (forced-colors:none) {
+  input::selection {
+    color: #FFF;
+    background: #0078D4;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background-color: rgb(51, 51, 51);
+  }
+}
+@media (forced-colors:none) and (prefers-color-scheme: dark) {
+  input::selection {
+    color: #000;
+    /* RGBA because Blink applies an opacity otherwise */
+    background: rgba(147, 184, 231, 0.996);
+    opacity: 1;
+  }
+}</style><style>#app-root {
+      height: 100%;
+      position: absolute;
+      width: 100%;
+    }</style><style data-jss="" data-meta="BaseTypography">
+.c01166 {
+  margin-top: 0;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0;
+  color: #2B2B2B;
+}
+.c01167 {
+  font-size: 60px;
+  line-height: 72px;
+}
+.c01168 {
+  font-size: 46px;
+  line-height: 56px;
+}
+.c01169 {
+  font-size: 34px;
+  line-height: 44px;
+}
+.c01170 {
+  font-size: 28px;
+  line-height: 36px;
+}
+.c01171 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.c01172 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.c01173 {
+  font-size: 14px;
+  line-height: 20px;
+}
+.c01174 {
+  font-size: 12px;
+  line-height: 16px;
+}
+.c01175 {
+  font-size: 10px;
+  line-height: 16px;
+}
+</style><style data-jss="" data-meta="MSFTHeading">
+.c01158 {
+}
+.c01158.c01159, .c01158.c01160, .c01158.c01161, .c01158.c01162, .c01158.c01163, .c01158.c01164, .c01158.c01165 {
+  cursor: default;
+  font-weight: 600;
+}
+.c01159 {
+}
+.c01160 {
+}
+.c01161 {
+}
+.c01162 {
+}
+.c01163 {
+}
+.c01164 {
+}
+.c01165 {
+}
+</style><style data-jss="" data-meta="BaseCard">
+.c01157 {
+  width: 100%;
+  height: 100%;
+  transition: all 0.2s ease-in-out;
+  background: #FFFFFF;
+  border-radius: 4px;
+  box-shadow: 0px 1.6px 3.6px rgba(0,0,0,0.13), 0px 0px 2.9px rgba(0,0,0,0.11);
+}
+@media (-ms-high-contrast:active) {
+  .c01157 {
+    border: 1px solid WindowText;
+  }
+}
+</style><style data-jss="">
+.c01152 {
+  margin-top: 30px;
+}
+.c01153 {
+  gap: 15px;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  flex-direction: row;
+}
+.c01154 {
+  width: fit-content;
+  height: auto;
+  padding: 8px 12px;
+}
+.c01155 {
+  margin-top: 10px;
+}
+.c01156 {
+  margin-top: 5px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #262626;
+}
+</style><style data-jss="" data-meta="BaseDivider">
+.c01151 {
+  height: 0;
+  margin: 0;
+  border: none;
+  box-sizing: content-box;
+  transition: all 0.2s ease-in-out;
+  border-top: 1px solid #E2E2E2;
+}
+@media (-ms-high-contrast:active) {
+  .c01151 {
+    border-color: ButtonText;
+  }
+}
+</style><style data-jss="" data-meta="MSFTButtonBase">
+.c01141 {
+  position: relative;
+}
+.c01141::before {
+  width: 100%;
+  bottom: -3px;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  left: 0;
+}
+.c01141 svg {
+}
+.c01142 {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+}
+@media (-ms-high-contrast:active) {
+  .c01142 {
+    color: GrayText;
+    opacity: 1;
+  }
+}
+.c01143 {
+  display: flex;
+  min-width: 20px;
+  min-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.c01144 {
+}
+.c01145 {
+}
+.c01146 {
+}
+.c01147 {
+}
+.c01148 {
+}
+.c01148 .c01144 {
+  margin-right: 10px;
+}
+.c01148 .c01145 {
+  margin-left: 10px;
+}
+.c01149 {
+  cursor: pointer;
+  display: inline-flex;
+  overflow: hidden;
+  max-width: 374px;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  line-height: 1;
+  font-family: inherit;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  min-width: 32px;
+  padding: 0 8px;
+  height: 32px;
+  color: #262626;
+  fill: #262626;
+  background: #F7F7F7;
+}
+.c01149::-moz-focus-inner {
+  border: 0;
+}
+.c01149:hover:enabled {
+  background-color: #EAEAEA;
+}
+.c01149:active:enabled {
+  background-color: #EFEFEF;
+}
+.c01149:focus {
+  outline: none;
+}
+.c01149:focus-visible {
+  border-color: #838383;
+}
+.c01149:disabled {
+}
+@media (-ms-high-contrast:active) {
+  .c01149 {
+    fill: ButtonText;
+    color: ButtonText;
+    background: ButtonFace;
+    border-color: ButtonFace;
+    -ms-high-contrast-adjust: none;
+  }
+}
+a.c01149 {
+}
+@media (-ms-high-contrast:active) {
+  a.c01149 {
+    fill: LinkText !important;
+    color: LinkText !important;
+    background: Window;
+    border-color: LinkText !important;
+  }
+}
+a.c01149:not(.c01142):hover {
+  background-color: #EAEAEA;
+}
+a.c01149:not(.c01142):active {
+  background-color: #EFEFEF;
+}
+a.c01149:focus {
+  outline: none;
+}
+a.c01149:focus-visible {
+  border-color: #838383;
+}
+a.c01149.c01142 {
+}
+a.c01149.c01142:focus-visible {
+  border-color: transparent;
+}
+@media (-ms-high-contrast:active) {
+  a.c01149.c01142:focus-visible {
+    background: ButtonFace !important;
+    box-shadow: none;
+  }
+}
+@media (-ms-high-contrast:active) {
+  a.c01149.c01142 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  a.c01149:focus-visible {
+    background: LinkText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  a.c01149:not(.c01142):hover {
+    fill: HighlightText !important;
+    color: HighlightText !important;
+    background: LinkText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c01149:disabled {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c01149:focus-visible {
+    fill: HighlightText !important;
+    color: HighlightText !important;
+    background: Highlight;
+    box-shadow: none;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c01149:hover:enabled {
+    fill: HighlightText;
+    color: HighlightText;
+    background: Highlight;
+  }
+}
+</style><style data-jss="" data-meta="BaseHypertext">
+.c01140 {
+  outline: none;
+  transition: all 0.2s ease-in-out, border 0.03s ease-in-out;
+  text-decoration: none;
+  color: #262626;
+}
+.c01140:link, .c01140:visited {
+  border-bottom: 1px solid #0072C9;
+  color: #0072C9;
+}
+@media (-ms-high-contrast:active) {
+  .c01140 {
+    color: WindowText;
+    -ms-high-contrast-adjust: none;
+  }
+}
+.c01140:link:hover, .c01140:visited:hover {
+  border-bottom-color: #0060A9;
+  color: #0060A9;
+}
+.c01140:link:active, .c01140:visited:active {
+  border-bottom-color: #097DD5;
+  color: #097DD5;
+}
+.c01140:link:focus, .c01140:visited:focus {
+  outline: none;
+}
+.c01140:link:focus-visible, .c01140:visited:focus-visible {
+  border-bottom: 2px solid #838383;
+}
+@media (-ms-high-contrast:active) {
+  .c01140:link, .c01140:visited {
+    color: LinkText !important;
+    border-bottom-color: LinkText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c01140:link:focus-visible, .c01140:visited:focus-visible {
+    color: LinkText !important;
+    border-bottom-color: LinkText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c01140:link:hover, .c01140:visited:hover {
+    color: LinkText !important;
+    border-bottom-color: LinkText !important;
+  }
+}
+</style><style data-jss="" data-meta="MSFTButtonBase - jssStyleSheet">
+.c01150 {
+  width: 28px;
+  height: 28px;
+  margin: 0;
+  cursor: pointer;
+  padding: 0;
+  min-width: 28px;
+  max-width: unset;
+  transition: none;
+  background: transparent;
+  margin-top: 0px;
+}
+.c01150:hover:not([disabled]) {
+}
+.c01150:focus-visible {
+}
+.c01150 > * {
+  display: flex !important;
+}
+.c01150:disabled {
+}
+@media (-ms-high-contrast:active) {
+  .c01150 {
+    fill: ButtonText;
+    forced-color-adjust: none;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c01150:disabled {
+    fill: GrayText;
+    forced-color-adjust: none;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c01150:focus-visible {
+    fill: ButtonText !important;
+    background: transparent;
+    border-color: ButtonText !important;
+    forced-color-adjust: none;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c01150:hover:not([disabled]) {
+    fill: HighlightText !important;
+    forced-color-adjust: none;
+  }
+}
+</style><style data-jss="">
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #8D8D8D;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb {
+    background: ButtonText;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A7A7A7;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb:hover {
+    background: Highlight;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-thumb:active {
+  background: #9A9A9A;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb:active {
+    background: Highlight;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-corner {
+  background: none;
+}
+.c01114 {
+  border-top: 1px solid #B6B6B6;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.c01115 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  justify-content: space-between;
+}
+.c01116 {
+  flex: 1;
+  margin: 0px;
+  font-size: 14px;
+  margin-inline-end: 8px;
+  color: #262626;
+}
+.c01116 > a {
+  border-bottom: 1px solid #0072C9;
+  text-decoration: none;
+  color: #0072C9;
+}
+.c01116 > a:hover {
+  border-bottom: 2px solid #0060A9;
+  color: #0060A9;
+}
+.c01116 > a:active {
+  border-bottom: 2px solid #097DD5;
+  color: #097DD5;
+}
+.c01116 > a:focus {
+  outline: none;
+}
+.c01116 > a:focus-visible {
+  border-bottom: 2px solid #838383;
+}
+.c01117 {
+  margin-top: 4px;
+}
+.c01118 {
+  height: unset;
+  border: none;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  min-width: unset;
+  background: none;
+  transition: none;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0072C9;
+  fill: #0072C9;
+}
+.c01118:disabled {
+  cursor: default !important;
+  opacity: unset;
+  color: #717171;
+  fill: #717171;
+}
+.c01118:hover:enabled {
+  background: none;
+  box-shadow: 0px 2px 0px 0px #0060A9;
+  color: #0060A9;
+  fill: #0060A9;
+}
+.c01118:focus:enabled {
+  outline: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px #838383;
+}
+.c01118:active:enabled {
+  background: none;
+  box-shadow: 0px 2px 0px 0px #097DD5;
+  color: #097DD5;
+  fill: #097DD5;
+}
+@media (-ms-high-contrast:active) {
+  .c01118 {
+    fill: LinkText;
+    color: LinkText;
+    forced-color-adjust: none;
+  }
+  .c01118:hover:enabled {
+    fill: LinkText;
+    color: LinkText;
+    background: none;
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+  .c01118:focus:enabled {
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+  .c01118:active:enabled {
+    fill: LinkText;
+    color: LinkText;
+    background: none;
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+}
+.c01119 {
+  margin: 0;
+  z-index: 4;
+  overflow: hidden;
+  max-width: 820px;
+  min-width: 215px;
+  padding-top: 34px;
+  margin-left: 50px;
+  white-space: nowrap;
+  margin-right: 50px;
+  text-overflow: ellipsis;
+  padding-bottom: 16px;
+  color: #262626;
+}
+.c01120 {
+  margin: 0;
+  z-index: 4;
+  overflow: hidden;
+  max-width: 820px;
+  min-width: 215px;
+  user-select: none;
+  padding-top: 10px;
+  margin-left: 50px;
+  white-space: nowrap;
+  margin-right: 50px;
+  text-overflow: ellipsis;
+  padding-bottom: 4px;
+  color: #262626;
+}
+.c01121 {
+  padding: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 18px;
+  list-style-type: none;
+}
+.c01122 {
+  width: 820px;
+  min-width: 215px;
+  max-width: 820px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.c01123 {
+}
+.c01124 {
+}
+.c01125 {
+}
+.c01126 {
+  color: #101010;
+  background-color: #FFEB3B;
+}
+@media (-ms-high-contrast:active) {
+  .c01126 {
+    color: HighlightText;
+    background-color: Highlight;
+    forced-color-adjust: none;
+  }
+}
+.c01127 {
+  width: 100%;
+  height: 100%;
+}
+.c01127:focus {
+  outline: none;
+}
+.c01128 {
+  width: 100%;
+  height: 100%;
+}
+.c01129 {
+  transform: scaleY(1);
+}
+.c01130 {
+  transform: scaleY(-1);
+}
+.c01131 {
+  display: none;
+}
+.c01132 {
+  font-weight: 600;
+}
+.c01133 {
+  padding-top: 5px;
+}
+.c01134 {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 3px;
+  grid-template-columns: 5fr 7fr 2fr 2fr 2fr 2fr 2fr;
+}
+.c01135 {
+  text-align: right;
+  padding-top: 5px;
+  padding-right: 12px;
+}
+.c01136 {
+  width: 100%;
+  display: grid;
+  grid-column-gap: 3px;
+  grid-template-columns: 5fr 15fr 36px;
+}
+.c01137 {
+  padding-top: 5px;
+}
+.c01138 {
+  overflow: auto;
+  flex-grow: 1;
+  padding-top: 5px;
+  white-space: pre-wrap;
+  overflow-wrap: break-word;
+}
+.c01139 {
+  display: block;
+}
+</style><style data-jss="">
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #8D8D8D;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb {
+    background: ButtonText;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A7A7A7;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb:hover {
+    background: Highlight;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-thumb:active {
+  background: #9A9A9A;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb:active {
+    background: Highlight;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-corner {
+  background: none;
+}
+.c0195 {
+  border-top: 1px solid #B6B6B6;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.c0196 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  justify-content: space-between;
+}
+.c0197 {
+  flex: 1;
+  margin: 0px;
+  font-size: 14px;
+  margin-inline-end: 8px;
+  color: #262626;
+}
+.c0197 > a {
+  border-bottom: 1px solid #0072C9;
+  text-decoration: none;
+  color: #0072C9;
+}
+.c0197 > a:hover {
+  border-bottom: 2px solid #0060A9;
+  color: #0060A9;
+}
+.c0197 > a:active {
+  border-bottom: 2px solid #097DD5;
+  color: #097DD5;
+}
+.c0197 > a:focus {
+  outline: none;
+}
+.c0197 > a:focus-visible {
+  border-bottom: 2px solid #838383;
+}
+.c0198 {
+  margin-top: 4px;
+}
+.c0199 {
+  height: unset;
+  border: none;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  min-width: unset;
+  background: none;
+  transition: none;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0072C9;
+  fill: #0072C9;
+}
+.c0199:disabled {
+  cursor: default !important;
+  opacity: unset;
+  color: #717171;
+  fill: #717171;
+}
+.c0199:hover:enabled {
+  background: none;
+  box-shadow: 0px 2px 0px 0px #0060A9;
+  color: #0060A9;
+  fill: #0060A9;
+}
+.c0199:focus:enabled {
+  outline: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px #838383;
+}
+.c0199:active:enabled {
+  background: none;
+  box-shadow: 0px 2px 0px 0px #097DD5;
+  color: #097DD5;
+  fill: #097DD5;
+}
+@media (-ms-high-contrast:active) {
+  .c0199 {
+    fill: LinkText;
+    color: LinkText;
+    forced-color-adjust: none;
+  }
+  .c0199:hover:enabled {
+    fill: LinkText;
+    color: LinkText;
+    background: none;
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+  .c0199:focus:enabled {
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+  .c0199:active:enabled {
+    fill: LinkText;
+    color: LinkText;
+    background: none;
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+}
+.c01100 {
+  margin: 0;
+  z-index: 4;
+  overflow: hidden;
+  max-width: 820px;
+  min-width: 215px;
+  padding-top: 34px;
+  margin-left: 50px;
+  white-space: nowrap;
+  margin-right: 50px;
+  text-overflow: ellipsis;
+  padding-bottom: 16px;
+  color: #262626;
+}
+.c01101 {
+  margin: 0;
+  z-index: 4;
+  overflow: hidden;
+  max-width: 820px;
+  min-width: 215px;
+  user-select: none;
+  padding-top: 10px;
+  margin-left: 50px;
+  white-space: nowrap;
+  margin-right: 50px;
+  text-overflow: ellipsis;
+  padding-bottom: 4px;
+  color: #262626;
+}
+.c01102 {
+  padding: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 18px;
+  list-style-type: none;
+}
+.c01103 {
+  width: 820px;
+  min-width: 215px;
+  max-width: 820px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.c01104 {
+}
+.c01105 {
+}
+.c01106 {
+}
+.c01107 {
+  color: #101010;
+  background-color: #FFEB3B;
+}
+@media (-ms-high-contrast:active) {
+  .c01107 {
+    color: HighlightText;
+    background-color: Highlight;
+    forced-color-adjust: none;
+  }
+}
+.c01108 {
+  width: 100%;
+  height: 100%;
+}
+.c01108:focus {
+  outline: none;
+}
+.c01109 {
+  width: 100%;
+  height: 100%;
+}
+.c01110 {
+  display: grid;
+  grid-column-gap: 3px;
+  grid-template-columns: 5fr 7fr 2fr 2fr 2fr 2fr 2fr;
+}
+.c01111 {
+  padding: 5px 0px 0px;
+  flex-grow: 1;
+  word-break: break-all;
+}
+.c01112 {
+  padding-top: 30px;
+}
+.c01113 {
+  display: flex;
+  padding: 10px 0px 0px;
+  flex-direction: column;
+  font-size: 12px;
+  line-height: 16px;
+  color: #262626;
+}
+</style><style data-jss="" data-meta="BaseLabel">
+.c0189 {
+  display: inline-block;
+  padding: 0;
+  font-size: 14px;
+  line-height: 20px;
+  color: #262626;
+}
+.c0190 {
+  clip: rect(1px, 1px, 1px, 1px);
+  width: 1px;
+  height: 1px;
+  border: 0;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  overflow: hidden;
+}
+</style><style data-jss="" data-meta="BaseCheckbox">
+.c0182 {
+  display: inline-flex;
+  position: relative;
+  transition: all 0.2s ease-in-out;
+  align-items: center;
+  flex-direction: row;
+}
+.c0182 .c0185 {
+  padding-left: 10px;
+}
+@media (-ms-high-contrast:active) {
+  .c0182 {
+    -ms-high-contrast-adjust: none;
+  }
+}
+.c0183 {
+  margin: 0;
+  z-index: 1;
+  position: absolute;
+  appearance: none;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 2px;
+  background: #F7F7F7;
+  border: 1px solid #8D8D8D;
+}
+.c0183:enabled {
+  cursor: pointer;
+}
+.c0183:hover:enabled {
+  background: #F7F7F7;
+  border-color: #666666;
+}
+.c0183:active:enabled {
+  background: #F7F7F7;
+  border-color: #A4A4A4;
+}
+.c0183:focus {
+  outline: none;
+}
+.c0183:focus-visible {
+  box-shadow: 0 0 0 2px #F7F7F7, 0 0 0 4px #838383;
+}
+@media (-ms-high-contrast:active) {
+  .c0183 {
+    background: Window;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0183:focus-visible {
+    box-shadow: 0 0 0 2px ButtonFace, 0 0 0 4px ButtonText;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0183:hover:enabled {
+    background: Window;
+    border-color: Highlight;
+  }
+}
+.c0184 {
+  display: inline-block;
+  position: relative;
+  flex-shrink: 0;
+  border-radius: 2px;
+  width: 20px;
+  height: 20px;
+}
+.c0184::before {
+  top: 0;
+  left: 0;
+  content: '';
+  z-index: 1;
+  position: absolute;
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+}
+.c0185 {
+  cursor: pointer;
+  color: #262626;
+  font-size: 14px;
+  line-height: 20px;
+}
+@media (-ms-high-contrast:active) {
+  .c0185 {
+    fill: WindowText !important;
+    color: WindowText !important;
+  }
+}
+.c0186 {
+}
+.c0186 .c0184 {
+}
+.c0186:hover {
+}
+.c0186 .c0183 {
+  border-color: transparent;
+  background: #717171;
+}
+@media (-ms-high-contrast:active) {
+  .c0186 .c0183 {
+    background: Highlight;
+  }
+}
+.c0186 .c0183:hover {
+  background: #5C5C5C;
+}
+.c0186 .c0183:active {
+  background: #7D7D7D;
+}
+@media (-ms-high-contrast:active) {
+  .c0186 .c0183:hover {
+    background: HighlightText;
+  }
+}
+.c0186:hover .c0184 {
+}
+.c0186:hover .c0184::before {
+}
+@media (-ms-high-contrast:active) {
+  .c0186:hover .c0184::before {
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="Highlight" fill-rule="evenodd" clip-rule="evenodd" d="M8.143 12.6697L15.235 4.5L16.8 5.90363L8.23812 15.7667L3.80005 11.2556L5.27591 9.7555L8.143 12.6697Z"/></svg>');
+  }
+}
+.c0186 .c0184::before {
+  background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="%23F7F7F7" fill-rule="evenodd" clip-rule="evenodd" d="M8.143 12.6697L15.235 4.5L16.8 5.90363L8.23812 15.7667L3.80005 11.2556L5.27591 9.7555L8.143 12.6697Z"/></svg>');
+}
+@media (-ms-high-contrast:active) {
+  .c0186 .c0184::before {
+    background: url('data:image/svg+xml;utf8,<svg viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><path fill="HighlightText" fill-rule="evenodd" clip-rule="evenodd" d="M8.143 12.6697L15.235 4.5L16.8 5.90363L8.23812 15.7667L3.80005 11.2556L5.27591 9.7555L8.143 12.6697Z"/></svg>');
+  }
+}
+.c0187 {
+}
+.c0187 .c0184 {
+}
+.c0187 .c0184::before {
+  width: auto;
+  height: auto;
+  transform: none;
+  border-radius: 2px;
+  top: 5px;
+  right: 5px;
+  bottom: 5px;
+  left: 5px;
+  background: #262626;
+}
+@media (-ms-high-contrast:active) {
+  .c0187 .c0184::before {
+    background-color: Highlight;
+  }
+}
+.c0188 {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+}
+@media (-ms-high-contrast:active) {
+  .c0188 {
+    color: GrayText;
+    opacity: 1;
+  }
+}
+.c0188 .c0183, .c0188 .c0185 {
+  cursor: not-allowed !important;
+}
+@media (-ms-high-contrast:active) {
+  .c0188 .c0183, .c0188 .c0185 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+</style><style data-jss="" data-meta="MSFTButtonBase">
+.c0173 {
+  position: relative;
+}
+.c0173::before {
+  width: 100%;
+  bottom: -3px;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  left: 0;
+}
+.c0173 svg {
+}
+.c0174 {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+}
+@media (-ms-high-contrast:active) {
+  .c0174 {
+    color: GrayText;
+    opacity: 1;
+  }
+}
+.c0175 {
+  display: flex;
+  min-width: 20px;
+  min-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.c0176 {
+}
+.c0177 {
+}
+.c0178 {
+}
+.c0179 {
+}
+.c0180 {
+}
+.c0180 .c0176 {
+  margin-right: 10px;
+}
+.c0180 .c0177 {
+  margin-left: 10px;
+}
+.c0181 {
+  cursor: pointer;
+  display: inline-flex;
+  overflow: hidden;
+  max-width: 374px;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  line-height: 1;
+  font-family: inherit;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  min-width: 32px;
+  padding: 0 8px;
+  height: 32px;
+  color: #262626;
+  fill: #262626;
+  background: #E5E5E5;
+}
+.c0181::-moz-focus-inner {
+  border: 0;
+}
+.c0181:hover:enabled, a.c0181:not(.c0174):hover {
+  background: #DDDDDD;
+}
+.c0181:active:enabled, a.c0181:not(.c0174):active {
+  background: #EAEAEA;
+}
+.c0181:focus {
+  outline: none;
+}
+.c0181:focus-visible {
+  border-color: #838383;
+}
+.c0181:disabled {
+}
+@media (-ms-high-contrast:active) {
+  .c0181 {
+    fill: ButtonText;
+    color: ButtonText;
+    background: ButtonFace;
+    border-color: ButtonText;
+    -ms-high-contrast-adjust: none;
+  }
+}
+a.c0181:not(.c0174) {
+}
+@media (-ms-high-contrast:active) {
+  a.c0181:not(.c0174) {
+    fill: LinkText !important;
+    color: LinkText !important;
+    background: Window;
+    border-color: LinkText !important;
+  }
+}
+a.c0181:not(.c0174):not(.c0174):hover {
+}
+a.c0181:not(.c0174).c0174 {
+}
+@media (-ms-high-contrast:active) {
+  a.c0181:not(.c0174).c0174 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  a.c0181:not(.c0174):not(.c0174):hover {
+    background: ButtonFace;
+    box-shadow: 0 0 0 1px inset LinkText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0181:disabled {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0181:focus-visible {
+    border-color: ButtonText;
+    box-shadow: 0 0 0 1px inset ButtonText;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0181:hover:enabled, a.c0181:not(.c0174):hover {
+    fill: HighlightText;
+    color: HighlightText;
+    background: Highlight;
+  }
+}
+</style><style data-jss="" data-meta="MSFTButtonBase">
+.c0164 {
+  position: relative;
+}
+.c0164::before {
+  width: 100%;
+  bottom: -3px;
+  content: '';
+  display: block;
+  position: absolute;
+  height: 1px;
+  left: 0;
+}
+.c0164 svg {
+}
+.c0165 {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+}
+@media (-ms-high-contrast:active) {
+  .c0165 {
+    color: GrayText;
+    opacity: 1;
+  }
+}
+.c0166 {
+  display: flex;
+  min-width: 20px;
+  min-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.c0167 {
+}
+.c0168 {
+}
+.c0169 {
+}
+.c0170 {
+}
+.c0171 {
+}
+.c0171 .c0167 {
+  margin-right: 10px;
+}
+.c0171 .c0168 {
+  margin-left: 10px;
+}
+.c0172 {
+  cursor: pointer;
+  display: inline-flex;
+  overflow: hidden;
+  max-width: 374px;
+  box-sizing: border-box;
+  transition: all 0.1s ease-in-out;
+  line-height: 1;
+  font-family: inherit;
+  align-items: center;
+  white-space: nowrap;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 14px;
+  border: 2px solid transparent;
+  border-radius: 2px;
+  min-width: 32px;
+  padding: 0 8px;
+  height: 32px;
+  color: #FFFFFF;
+  fill: #FFFFFF;
+  background: #0078D4;
+}
+.c0172::-moz-focus-inner {
+  border: 0;
+}
+.c0172:hover:enabled, a.c0172:not(.c0165):hover {
+  background: #006CBE;
+}
+.c0172:active:enabled, a.c0172:not(.c0165):active {
+  background: #1683D8;
+}
+.c0172:focus {
+  outline: none;
+}
+.c0172:focus-visible {
+  border-color: #838383;
+  box-shadow: 0 0 0 2px inset #F2F8FD;
+}
+.c0172:disabled {
+}
+.c0172 .c0169, .c0172 .c0170 {
+  fill: #FFFFFF;
+}
+@media (-ms-high-contrast:active) {
+  .c0172 {
+    fill: HighlightText;
+    color: HighlightText;
+    background: Highlight;
+    border-color: Highlight;
+    -ms-high-contrast-adjust: none;
+  }
+}
+a.c0172:not(.c0165) {
+}
+@media (-ms-high-contrast:active) {
+  a.c0172:not(.c0165) {
+    fill: LinkText !important;
+    color: LinkText !important;
+    background: Window;
+    border-color: LinkText !important;
+  }
+}
+a.c0172:not(.c0165) .c0169, a.c0172:not(.c0165) .c0170 {
+}
+a.c0172:not(.c0165):not(.c0165):hover {
+}
+a.c0172:not(.c0165).c0165 {
+}
+@media (-ms-high-contrast:active) {
+  a.c0172:not(.c0165).c0165 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+a.c0172:not(.c0165).c0165 .c0169, a.c0172:not(.c0165).c0165 .c0170 {
+}
+a.c0172:not(.c0165).c0165:hover {
+}
+@media (-ms-high-contrast:active) {
+  a.c0172:not(.c0165).c0165:hover {
+    box-shadow: none !important;
+  }
+}
+a.c0172:not(.c0165).c0165:hover .c0169, a.c0172:not(.c0165).c0165:hover .c0170 {
+}
+@media (-ms-high-contrast:active) {
+  a.c0172:not(.c0165).c0165:hover .c0169, a.c0172:not(.c0165).c0165:hover .c0170 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+  }
+}
+@media (-ms-high-contrast:active) {
+  a.c0172:not(.c0165).c0165 .c0169, a.c0172:not(.c0165).c0165 .c0170 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+  }
+}
+@media (-ms-high-contrast:active) {
+  a.c0172:not(.c0165):not(.c0165):hover {
+    background: ButtonFace;
+    box-shadow: 0 0 0 1px inset LinkText !important;
+  }
+}
+a.c0172:not(.c0165):not(.c0165):hover .c0169, a.c0172:not(.c0165):not(.c0165):hover .c0170 {
+}
+@media (-ms-high-contrast:active) {
+  a.c0172:not(.c0165):not(.c0165):hover .c0169, a.c0172:not(.c0165):not(.c0165):hover .c0170 {
+    fill: LinkText !important;
+    color: LinkText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  a.c0172:not(.c0165) .c0169, a.c0172:not(.c0165) .c0170 {
+    fill: LinkText !important;
+    color: LinkText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0172 .c0169, .c0172 .c0170 {
+    fill: HighlightText !important;
+    color: HighlightText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0172:disabled {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+.c0172:disabled .c0169, .c0172:disabled .c0170 {
+}
+@media (-ms-high-contrast:active) {
+  .c0172:disabled .c0169, .c0172:disabled .c0170 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0172:focus-visible {
+    border-color: ButtonText !important;
+    box-shadow: 0 0 0 2px inset ButtonFace;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0172:hover:enabled, a.c0172:not(.c0165):hover {
+    fill: Highlight;
+    color: Highlight;
+    background: HighlightText;
+    border-color: Highlight;
+  }
+}
+.c0172:hover:enabled .c0169, .c0172:hover:enabled .c0170, a.c0172:not(.c0165):hover .c0169, a.c0172:not(.c0165):hover .c0170 {
+}
+@media (-ms-high-contrast:active) {
+  .c0172:hover:enabled .c0169, .c0172:hover:enabled .c0170, a.c0172:not(.c0165):hover .c0169, a.c0172:not(.c0165):hover .c0170 {
+    fill: Highlight !important;
+    color: Highlight !important;
+  }
+}
+</style><style data-jss="" data-meta="MSFTTextField">
+.c0161 {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background: #FFFFFF;
+  border: 1px solid #BEBEBE;
+  color: #2B2B2B;
+  padding: 0 11px;
+  border-radius: 2px;
+  height: 32px;
+}
+.c0161:hover:enabled {
+  background: #FFFFFF;
+  border-color: #979797;
+}
+.c0161:active:enabled {
+  background: #FFFFFF;
+  border-color: #D6D6D6;
+}
+.c0161:focus:enabled {
+  outline: none;
+  box-shadow: 0 0 0 1px #888888 inset;
+  border-color: #888888;
+}
+.c0161:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+}
+.c0161::placeholder {
+  color: #767676;
+}
+@media (-ms-high-contrast:active) {
+  .c0161 {
+    color: ButtonText;
+    background: ButtonFace;
+    border-color: ButtonText;
+    -ms-high-contrast-adjust: none;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0161::placeholder {
+    color: GrayText;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0161:disabled {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0161:focus:enabled {
+    border-color: ButtonText;
+    box-shadow: 0 0 0 1px inset ButtonText;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0161:hover:enabled {
+    background: ButtonFace;
+    border: 1px solid Highlight;
+  }
+}
+.c0162 {
+  margin: 0;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  font-family: inherit;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 400;
+  background: #EDEDED;
+  border: 1px solid transparent;
+  color: #2B2B2B;
+  padding: 0 11px;
+  border-radius: 2px;
+}
+.c0162:hover:enabled {
+  border-color: transparent;
+  background: #E5E5E5;
+}
+.c0162:active:enabled {
+  border-color: transparent;
+}
+.c0162:focus:enabled {
+  border-color: #888888;
+}
+.c0162:disabled {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+}
+.c0162::placeholder {
+  color: #6B6B6B;
+}
+@media (-ms-high-contrast:active) {
+  .c0162 {
+    background: ButtonFace;
+    border-color: ButtonText;
+    -ms-high-contrast-adjust: none;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0162::placeholder {
+    color: GrayText;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0162:disabled {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0162:hover:enabled {
+    background: ButtonFace;
+    border: 1px solid Highlight;
+  }
+}
+</style><style data-jss="" data-meta="MSFTTextAction">
+.c0149 {
+  margin: 0;
+  display: flex;
+  position: relative;
+  min-width: 92px;
+  box-sizing: border-box;
+  transition: all 0.2s ease-in-out;
+  flex-direction: row;
+  height: 32px;
+  border: 1px solid #BEBEBE;
+  background: #FFFFFF;
+  border-radius: 2px;
+}
+.c0149:hover {
+  background: #FFFFFF;
+  border-color: #979797;
+}
+.c0149:active {
+  background: #FFFFFF;
+  border-color: #D6D6D6;
+}
+@media (-ms-high-contrast:active) {
+  .c0149 {
+    fill: ButtonText;
+    color: ButtonText;
+    background: ButtonFace;
+    border-color: ButtonText;
+    -ms-high-contrast-adjust: none;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0149:hover {
+    background: transparent;
+    border-color: Highlight;
+  }
+}
+.c0150 {
+  background: #EDEDED;
+  border: 1px solid transparent;
+}
+.c0150:hover {
+  border-color: transparent;
+  background: #E5E5E5;
+}
+.c0150:active {
+  border-color: transparent;
+  background: #F2F2F2;
+}
+@media (-ms-high-contrast:active) {
+  .c0150 {
+    background: ButtonFace;
+    border: 1px solid ButtonText;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0150:hover {
+    background: ButtonFace;
+    border-color: Highlight;
+  }
+}
+.c0151 {
+}
+.c0152 {
+}
+.c0152, .c0152:hover {
+  box-shadow: 0 0 0 1px #888888 inset;
+  border: 1px solid #888888;
+}
+@media (-ms-high-contrast:active) {
+  .c0152 {
+  }
+  .c0152, .c0152:hover {
+    box-shadow: 0 0 0 1px ButtonText inset;
+    border: 1px solid ButtonText;
+  }
+}
+.c0153 {
+  cursor: not-allowed !important;
+  opacity: 0.3;
+}
+@media (-ms-high-contrast:active) {
+  .c0153 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+    background: ButtonFace !important;
+    border-color: GrayText !important;
+  }
+}
+.c0153:hover {
+  background: #FFFFFF;
+  border-color: #BEBEBE;
+}
+.c0153:active {
+  background: #FFFFFF;
+  border-color: #BEBEBE;
+}
+.c0153 .c0158, .c0153 .c0159 {
+}
+@media (-ms-high-contrast:active) {
+  .c0153 .c0158, .c0153 .c0159 {
+    fill: GrayText !important;
+    color: GrayText !important;
+    opacity: 1;
+  }
+}
+.c0154 {
+  top: 0;
+  flex: 0 0 auto;
+  margin: 2px;
+  cursor: pointer;
+  padding: 0 3px;
+  min-width: fit-content;
+  transition: color .1s, background-color .1s, border-color 0.2s ease-in-out;
+  border-color: transparent;
+  color: #2B2B2B;
+  fill: #2B2B2B;
+  height: calc(32px - 6px);
+  left: 0;
+}
+@media (-ms-high-contrast:active) {
+  .c0154 {
+    fill: ButtonText;
+    background: ButtonFace;
+  }
+}
+.c0154:hover {
+}
+.c0154:active {
+}
+.c0154:disabled {
+}
+.c0154:focus {
+  outline: none;
+}
+.c0154:focus-visible {
+}
+@media (-ms-high-contrast:active) {
+  .c0154:focus-visible {
+    fill: HighlightText;
+    background: Highlight;
+    border-color: ButtonText !important;
+    box-shadow: 0 0 0 2px inset ButtonFace;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0154:active {
+    fill: HighlightText;
+    color: HighlightText;
+    background: Highlight;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0154:hover {
+    fill: HighlightText;
+    color: HighlightText;
+    background: Highlight;
+  }
+}
+.c0155 {
+  display: flex;
+  min-width: 20px;
+  min-height: 20px;
+  align-items: center;
+  justify-content: center;
+}
+.c0156 {
+  margin-left: 9px;
+}
+.c0157 {
+  margin-right: 9px;
+}
+.c0158 {
+  margin: auto;
+  fill: #2B2B2B;
+}
+@media (-ms-high-contrast:active) {
+  .c0158 {
+    fill: ButtonText !important;
+    color: ButtonText !important;
+  }
+}
+.c0159 {
+  margin: auto;
+  fill: #2B2B2B;
+}
+@media (-ms-high-contrast:active) {
+  .c0159 {
+    fill: ButtonText !important;
+    color: ButtonText !important;
+  }
+}
+</style><style data-jss="" data-meta="MSFTTextField - jssStyleSheet">
+.c0163 {
+  flex: 1 0 0px;
+  height: calc(100% - 4px);
+  margin: 2px 1px;
+  border: none;
+  min-width: inherit;
+  background: transparent;
+}
+.c0163:hover, .c0163:hover:enabled, .c0163:disabled, .c0163:active, .c0163:active:enabled, .c0163:focus, .c0163:focus:enabled {
+  border: none;
+  background: none;
+  box-shadow: none;
+}
+@media (-ms-high-contrast:active) {
+  .c0163 {
+    fill: ButtonText !important;
+    color: ButtonText !important;
+  }
+}
+@media (-ms-high-contrast:active) {
+  .c0163:hover, .c0163:hover:enabled, .c0163:disabled, .c0163:active, .c0163:active:enabled, .c0163:focus, .c0163:focus:enabled {
+    background: ButtonFace;
+  }
+}
+</style><style data-jss="">
+.c0144 {
+}
+.c0145 {
+}
+.c0145 .c0146 {
+  width: 20px;
+  height: 20px;
+}
+.c0146 {
+}
+.c0147 {
+  min-width: 16px;
+}
+@media (-ms-high-contrast:active) {
+  .c0147 {
+    fill: WindowText;
+  }
+}
+.c0148 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style><style data-jss="" data-meta="MSFTTextAction - jssStyleSheet">
+.c0160 {
+  margin-inline-start: auto;
+}
+</style><style data-jss="" data-meta="BaseTypography">
+.c0134 {
+  margin-top: 0;
+  transition: all 0.2s ease-in-out;
+  margin-bottom: 0;
+  color: #262626;
+}
+.c0135 {
+  font-size: 60px;
+  line-height: 72px;
+}
+.c0136 {
+  font-size: 46px;
+  line-height: 56px;
+}
+.c0137 {
+  font-size: 34px;
+  line-height: 44px;
+}
+.c0138 {
+  font-size: 28px;
+  line-height: 36px;
+}
+.c0139 {
+  font-size: 20px;
+  line-height: 28px;
+}
+.c0140 {
+  font-size: 16px;
+  line-height: 24px;
+}
+.c0141 {
+  font-size: 14px;
+  line-height: 20px;
+}
+.c0142 {
+  font-size: 12px;
+  line-height: 16px;
+}
+.c0143 {
+  font-size: 10px;
+  line-height: 16px;
+}
+</style><style data-jss="" data-meta="MSFTHeading">
+.c0126 {
+}
+.c0126.c0127, .c0126.c0128, .c0126.c0129, .c0126.c0130, .c0126.c0131, .c0126.c0132, .c0126.c0133 {
+  cursor: default;
+  font-weight: 600;
+}
+.c0127 {
+}
+.c0128 {
+}
+.c0129 {
+}
+.c0130 {
+}
+.c0131 {
+}
+.c0132 {
+}
+.c0133 {
+}
+</style><style data-jss="">
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  opacity: 0;
+}
+::-webkit-scrollbar-thumb {
+  border-radius: 4px;
+  background: #8D8D8D;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb {
+    background: ButtonText;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #A7A7A7;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb:hover {
+    background: Highlight;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-thumb:active {
+  background: #9A9A9A;
+}
+@media (-ms-high-contrast:active) {
+  ::-webkit-scrollbar-thumb:active {
+    background: Highlight;
+    forced-color-adjust: none;
+  }
+}
+::-webkit-scrollbar-corner {
+  background: none;
+}
+.c011 {
+  border-top: 1px solid #B6B6B6;
+  margin-top: 8px;
+  padding-top: 8px;
+}
+.c012 {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  margin-bottom: 14px;
+  justify-content: space-between;
+}
+.c013 {
+  flex: 1;
+  margin: 0px;
+  font-size: 14px;
+  margin-inline-end: 8px;
+  color: #262626;
+}
+.c013 > a {
+  border-bottom: 1px solid #0072C9;
+  text-decoration: none;
+  color: #0072C9;
+}
+.c013 > a:hover {
+  border-bottom: 2px solid #0060A9;
+  color: #0060A9;
+}
+.c013 > a:active {
+  border-bottom: 2px solid #097DD5;
+  color: #097DD5;
+}
+.c013 > a:focus {
+  outline: none;
+}
+.c013 > a:focus-visible {
+  border-bottom: 2px solid #838383;
+}
+.c014 {
+  margin-top: 4px;
+}
+.c015 {
+  height: unset;
+  border: none;
+  cursor: pointer;
+  display: block;
+  padding: 0;
+  min-width: unset;
+  background: none;
+  transition: none;
+  border-radius: 0px;
+  font-size: 14px;
+  line-height: 20px;
+  color: #0072C9;
+  fill: #0072C9;
+}
+.c015:disabled {
+  cursor: default !important;
+  opacity: unset;
+  color: #717171;
+  fill: #717171;
+}
+.c015:hover:enabled {
+  background: none;
+  box-shadow: 0px 2px 0px 0px #0060A9;
+  color: #0060A9;
+  fill: #0060A9;
+}
+.c015:focus:enabled {
+  outline: none;
+  background: none;
+  box-shadow: 0px 2px 0px 0px #838383;
+}
+.c015:active:enabled {
+  background: none;
+  box-shadow: 0px 2px 0px 0px #097DD5;
+  color: #097DD5;
+  fill: #097DD5;
+}
+@media (-ms-high-contrast:active) {
+  .c015 {
+    fill: LinkText;
+    color: LinkText;
+    forced-color-adjust: none;
+  }
+  .c015:hover:enabled {
+    fill: LinkText;
+    color: LinkText;
+    background: none;
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+  .c015:focus:enabled {
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+  .c015:active:enabled {
+    fill: LinkText;
+    color: LinkText;
+    background: none;
+    box-shadow: 0px 2px 0px 0px LinkText;
+  }
+}
+.c016 {
+  margin: 0;
+  z-index: 4;
+  overflow: hidden;
+  max-width: 820px;
+  min-width: 215px;
+  padding-top: 34px;
+  margin-left: 50px;
+  white-space: nowrap;
+  margin-right: 50px;
+  text-overflow: ellipsis;
+  padding-bottom: 16px;
+  color: #262626;
+}
+.c017 {
+  margin: 0;
+  z-index: 4;
+  overflow: hidden;
+  max-width: 820px;
+  min-width: 215px;
+  user-select: none;
+  padding-top: 10px;
+  margin-left: 50px;
+  white-space: nowrap;
+  margin-right: 50px;
+  text-overflow: ellipsis;
+  padding-bottom: 4px;
+  color: #262626;
+}
+.c018 {
+  padding: 0;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 18px;
+  list-style-type: none;
+}
+.c019 {
+  width: 820px;
+  min-width: 215px;
+  max-width: 820px;
+  margin-top: 10px;
+  margin-left: 50px;
+  margin-right: 50px;
+}
+.c0110 {
+}
+.c0111 {
+}
+.c0112 {
+}
+.c0113 {
+  color: #101010;
+  background-color: #FFEB3B;
+}
+@media (-ms-high-contrast:active) {
+  .c0113 {
+    color: HighlightText;
+    background-color: Highlight;
+    forced-color-adjust: none;
+  }
+}
+.c0114 {
+  width: 100%;
+  height: 100%;
+}
+.c0114:focus {
+  outline: none;
+}
+.c0115 {
+  width: 100%;
+  height: 100%;
+}
+.c0116 {
+  flex-self: flex-end;
+  align-self: end;
+  justify-self: end;
+  margin-inline-end: 8px;
+}
+.c0117 {
+  transform: rotate(180deg);
+  margin-inline-end: 10px;
+  fill: #262626;
+}
+.c0118 {
+  top: 5px;
+  margin-inline-start: 40px;
+}
+.c0119 {
+  padding: 0 10px;
+}
+.c0120 {
+  padding: 0 10px;
+}
+.c0121 {
+  padding: 10px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #262626;
+}
+.c0122 {
+  display: flex;
+  padding: 36px 10px;
+  align-items: center;
+}
+.c0123 {
+  margin-inline-start: auto;
+}
+.c0124 {
+  min-width: 92px;
+}
+.c0125 {
+  height: 100%;
+  min-width: 250px;
+  min-height: 100vh;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  max-width: 1160px;
+}
+</style></head><body style="margin: 0;"><div id="app-root"><div style="background-color: rgb(247, 247, 247);"><div class="c0125"><section class="c0122" role="banner"><h1 class="c0134 c0139 c0126 c0131">Directivas</h1><div class="c0123" role="search"><div style="background-color: rgb(255, 255, 255);"><div class="c0149 c0160 c0124"><div class="c0155 c0156"><div aria-hidden="true" class="c0148"><svg width="20" height="20" viewBox="0 0 20 20" class="c0158 c0147 "><path d="M8.5 3a5.5 5.5 0 014.23 9.02l4.12 4.13a.5.5 0 01-.63.76l-.07-.06-4.13-4.12A5.5 5.5 0 118.5 3zm0 1a4.5 4.5 0 100 9 4.5 4.5 0 000-9z" fill-rule="nonzero"></path></svg></div></div><input aria-label="Filtrar por nombre" placeholder="Filtrar por nombre" class="c0161 c0163" type="text" value=""></div></div></div></section><main id="policy-ui"><section class="c0119"><button id="reload-policies" class="c0172 c0116"><span class="c0164">Volver a cargar directivas</span></button><button id="export-policies" class="c0181 c0116"><span class="c0173">Exportar a JSON</span></button><div class="c0182 c0118"><input class="c0183" id="checkboxShowUnsetId" name="checkboxShowUnset" type="checkbox" value=""><span class="c0184"></span><label slot="label" for="checkboxShowUnsetId" class="c0189 c0185" style="min-width: 200px;">Mostrar directivas sin valor</label></div></section><section class="c0120"><section class="c01152"><h2 class="c0134 c0140 c0126 c0132">Estado</h2><div class="c01153"><div class="c01157 c01154"><h3 class="c01166 c01173 c01158 c01165">Microsoft Edge Update</h3><div class="c01155"><div class="c01156">Versión: 1.3.185.21</div><div class="c01156">Marca de tiempo de la última directiva: Hace 3 horas</div></div></div></div></section><section id="main-section"><div class="c01112"><h2 class="c0134 c0140 c0126 c0132">Microsoft Edge Policies</h2><div id="chrome-table" aria-label="Microsoft Edge Policies" role="table" class="c01113"><div role="row" class="c01111 c01110 entry"><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Nombre de directiva</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Valor de directiva</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Origen</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Se aplica a</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Nivel</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Estado</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Mostrar más</p></span></div><div role="row" class="c01111 c01134 entry"><span role="rowheader" class="c01137
+            c01132"><a href="https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#autoopenallowedforurls" title="AutoOpenAllowedForURLs" target="_blank" class="c01140">AutoOpenAllowedForURLs</a></span><span role="cell" class="c01137" title="[&quot;https://localhost:7220/&quot;]">["https://localhost:7220/"]</span><span role="cell" class="c01133">Plataforma</span><span role="cell" class="c01133">Dispositivo</span><span role="cell" class="c01133">Obligatorio</span><span role="cell" class="c01137">Aceptar</span><span role="cell"><button aria-label="Mostrar más for AutoOpenAllowedForURLs" id="AutoOpenAllowedForURLs-button-id" title="Mostrar más for AutoOpenAllowedForURLs" class="c01149 c01150"><span class="c01141"><div aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="c01129"><path d="M15.85 7.65c.2.2.2.5 0 .7l-5.46 5.49a.55.55 0 01-.78 0L4.15 8.35a.5.5 0 01.7-.7L10 12.8l5.15-5.16c.2-.2.5-.2.7 0z"></path></svg></div></span></button></span></div><hr aria-hidden="true" class="c01151"><div role="row" class="c01111 c01134 entry"><span role="rowheader" class="c01137
+            c01132"><a href="https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#autoopenfiletypes" title="AutoOpenFileTypes" target="_blank" class="c01140">AutoOpenFileTypes</a></span><span role="cell" class="c01137" title="[&quot;application&quot;]">["application"]</span><span role="cell" class="c01133">Plataforma</span><span role="cell" class="c01133">Dispositivo</span><span role="cell" class="c01133">Obligatorio</span><span role="cell" class="c01137">Error, Omitida</span><span role="cell"><button aria-label="Mostrar más for AutoOpenFileTypes" id="AutoOpenFileTypes-button-id" title="Mostrar más for AutoOpenFileTypes" class="c01149 c01150"><span class="c01141"><div aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="c01129"><path d="M15.85 7.65c.2.2.2.5 0 .7l-5.46 5.49a.55.55 0 01-.78 0L4.15 8.35a.5.5 0 01.7-.7L10 12.8l5.15-5.16c.2-.2.5-.2.7 0z"></path></svg></div></span></button></span></div><hr aria-hidden="true" class="c01151"><div role="row" class="c01111 c01134 entry"><span role="rowheader" class="c01137
+            c01132"><a href="https://docs.microsoft.com/DeployEdge/microsoft-edge-policies#smartscreenfortrusteddownloadsenabled" title="SmartScreenForTrustedDownloadsEnabled" target="_blank" class="c01140">SmartScreenForTrustedDownloadsEnabled</a></span><span role="cell" class="c01137" title="false">false</span><span role="cell" class="c01133">Plataforma</span><span role="cell" class="c01133">Dispositivo</span><span role="cell" class="c01133">Obligatorio</span><span role="cell" class="c01137">Error, Omitida</span><span role="cell"><button aria-label="Mostrar más for SmartScreenForTrustedDownloadsEnabled" id="SmartScreenForTrustedDownloadsEnabled-button-id" title="Mostrar más for SmartScreenForTrustedDownloadsEnabled" class="c01149 c01150"><span class="c01141"><div aria-hidden="true"><svg width="20" height="20" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg" class="c01129"><path d="M15.85 7.65c.2.2.2.5 0 .7l-5.46 5.49a.55.55 0 01-.78 0L4.15 8.35a.5.5 0 01.7-.7L10 12.8l5.15-5.16c.2-.2.5-.2.7 0z"></path></svg></div></span></button></span></div><hr aria-hidden="true" class="c01151"></div></div><div class="c01112"><h2 class="c0134 c0140 c0126 c0132">Policy Precedence</h2><div id="precedence-table" aria-label="Policy Precedence" role="table" class="c01113"><div role="row" class="c01111 c01110 entry"><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Nombre de directiva</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Valor de directiva</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Origen</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Se aplica a</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Nivel</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Estado</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Mostrar más</p></span></div><div role="row" id="no-policies" class="c01111"><div role="cell">No hay directivas establecidas</div></div><hr aria-hidden="true" class="c01151"></div></div><div class="c01112"><h2 class="c0134 c0140 c0126 c0132">Microsoft EdgeUpdate Policies</h2><div id="updater-table" aria-label="Microsoft EdgeUpdate Policies" role="table" class="c01113"><div role="row" class="c01111 c01110 entry"><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Nombre de directiva</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Valor de directiva</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Origen</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Se aplica a</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Nivel</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Estado</p></span><span role="columnheader"><p class="c0134 c0141 c0126 c0133">Mostrar más</p></span></div><div role="row" id="no-policies" class="c01111"><div role="cell">No hay directivas establecidas</div></div><hr aria-hidden="true" class="c01151"></div></div></section></section></main></div><div class="announcement" style="top: 0px; position: fixed; opacity: 0;"><div role="status"></div><div role="alert"></div></div></div></div><script defer="defer" src="edge://policy/policy.bundle.js"></script></body></html>

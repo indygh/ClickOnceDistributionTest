@@ -1,0 +1,74 @@
+{
+   "chromeMetadata": {
+      "OS": "Windows 10 Version 22H2 (Build 19045.4170)",
+      "application": "Microsoft Edge",
+      "revision": "908657ec17be9ad27101d76cdae7448c824b705c",
+      "version": "122.0.2365.92 (Compilación oficial)  (64 bits)"
+   },
+   "policyValues": {
+      "chrome": {
+         "name": "Microsoft Edge Policies",
+         "policies": {
+            "AutoOpenAllowedForURLs": {
+               "info": "Esta directiva funciona según lo previsto, pero se ha establecido el mismo valor en otra parte y se reemplaza por esta directiva.",
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "superseded": [ {
+                  "level": "mandatory",
+                  "scope": "user",
+                  "source": "platform",
+                  "value": [ "https://localhost:7220/" ]
+               } ],
+               "value": [ "https://localhost:7220/" ]
+            },
+            "AutoOpenFileTypes": {
+               "error": "Esta directiva está bloqueada. Se omitirá su valor.",
+               "ignored": true,
+               "info": "Esta directiva funciona según lo previsto, pero se ha establecido el mismo valor en otra parte y se reemplaza por esta directiva.",
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "superseded": [ {
+                  "ignored": true,
+                  "level": "mandatory",
+                  "scope": "user",
+                  "source": "platform",
+                  "value": [ "application" ]
+               } ],
+               "value": [ "application" ]
+            },
+            "SmartScreenForTrustedDownloadsEnabled": {
+               "error": "Esta directiva está bloqueada. Se omitirá su valor.",
+               "ignored": true,
+               "level": "mandatory",
+               "scope": "machine",
+               "source": "platform",
+               "value": false
+            }
+         }
+      },
+      "extensions": {
+      },
+      "precedence": {
+         "name": "Policy Precedence",
+         "policies": {
+         },
+         "precedenceOrder": [ "Máquina de la plataforma", "Máquina en la nube", "Usuario de la plataforma", "Usuario en la nube" ]
+      },
+      "updater": {
+         "name": "Microsoft EdgeUpdate Policies",
+         "policies": {
+         }
+      }
+   },
+   "status": {
+      "updater": {
+         "policyDescriptionKey": "statusUpdater",
+         "timeSinceLastRefresh": "Hace 3 horas",
+         "version": "1.3.185.21"
+      },
+      "user": {
+      }
+   }
+}
